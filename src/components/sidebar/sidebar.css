@@ -1,0 +1,33 @@
+/* Sidebar.css */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100px; /* Adjust the width as needed */
+  color: #ffffff !important; /* Text color with !important */
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center-align items vertically */
+  font-size: 24px; /* Increase the font size to make labels bigger */
+}
+
+ul {
+  color: #000000 !important; /* Change the text color to black with !important */
+  padding: 0;
+  list-style: none; /* Remove bullet points from the list */
+  margin: 0;
+}
+
+li {
+  font-style: rgb(0, 0, 0);
+  margin-bottom: 50px; /* Adjust the spacing between labels */
+  cursor: pointer;
+  transition: transform 0.3s; /* Add a smooth animation on hover */
+}
+
+li:hover {
+  transform: scale(1.9) translateX(20px); /* Scale up and displace on the x-axis to the right on hover */
+}
+

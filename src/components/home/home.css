@@ -1,0 +1,33 @@
+/* home.css */
+.home {
+  font-size: large;
+  text-align: center;
+  animation: fadeInUp 1s; /* Example animation from Animate.css */
+  font-family: 'Your Chosen Font', sans-serif; /* Replace 'Your Chosen Font' with the font you selected from FontPool */
+  background-color: #9193a0; /* Light grey background color */
+}
+
+.logo {
+  max-width: 100px; /* Adjust the logo size as needed */
+  animation: bounce 1s infinite alternate; /* Add a playful bounce animation */
+}
+
+.app {
+  overflow: hidden; /* Hide scroll bars for the scrolling effect */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

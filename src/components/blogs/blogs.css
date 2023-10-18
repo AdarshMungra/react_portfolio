@@ -1,0 +1,81 @@
+/* blogs.css */
+.blogs-container {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .blogs-header {
+    font-size: 3rem; /* Increase the font size for a magazine cover title */
+    font-weight: bold; /* Make the title bold */
+    margin-bottom: 30px; /* Add more spacing below the title */
+    color: #333;
+  }
+  
+  .blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .blog-post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .blog-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .blog-details {
+    padding: 20px;
+  }
+  
+  .blog-title {
+    font-size: 1.8rem; /* Increase the font size for blog titles */
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase; /* Uppercase the titles for a magazine-like feel */
+  }
+  
+  .blog-content {
+    font-size: 1.3rem; /* Slightly larger font size for content */
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.5; /* Add line spacing for improved readability */
+  }
+  
+  .blog-info {
+    font-size: 1rem;
+    color: #999;
+  }
+  
+  a.read-more {
+    display: block;
+    text-decoration: none;
+    background-color: #4caede;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  a.read-more:hover {
+    background-color: #0056b3;
+  }
