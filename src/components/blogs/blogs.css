@@ -7,13 +7,14 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #171717 ;
   }
   
   .blogs-header {
     font-size: 3rem; /* Increase the font size for a magazine cover title */
     font-weight: bold; /* Make the title bold */
     margin-bottom: 30px; /* Add more spacing below the title */
-    color: #333;
+    color: #EDEDED;
   }
   
   .blog-posts {
@@ -24,10 +25,10 @@
   }
   
   .blog-post {
-    background-color: #fff;
+    background-color: #444444;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgb(237, 237, 237);
     overflow: hidden;
     max-width: 400px;
     text-align: left;

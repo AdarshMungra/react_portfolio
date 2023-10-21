@@ -4,12 +4,7 @@
   text-align: center;
   animation: fadeInUp 1s; /* Example animation from Animate.css */
   font-family: 'Your Chosen Font', sans-serif; /* Replace 'Your Chosen Font' with the font you selected from FontPool */
-  background-color: #9193a0; /* Light grey background color */
-}
-
-.logo {
-  max-width: 100px; /* Adjust the logo size as needed */
-  animation: bounce 1s infinite alternate; /* Add a playful bounce animation */
+  background-color: #171717; /* Light grey background color */
 }
 
 .app {
