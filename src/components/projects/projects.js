@@ -1,6 +1,6 @@
 import React from 'react';
 import './projects.css';
-import CursorBall from '../cursorBall/cursorBall'; // Import the CursorBall component
+import CursorBall from '../cursorBall/cursorBall';
 
 const Projects = () => {
   const projects = [
@@ -8,33 +8,64 @@ const Projects = () => {
       name: 'Project 1',
       description: 'Description of Project 1',
       link: 'Link to Project 1',
-      image: '/assets/logo/projects_tumbs/project1.jpg', // Replace with your image path
+      thumbnail: '/assets/logo/projects_thumbs/project1_thumb.jpg',
+      image: '/assets/logo/projects/project1.jpg',
     },
     {
       name: 'Project 2',
       description: 'Description of Project 2',
       link: 'Link to Project 2',
-      image: '/assets/logo/projects_tumbs/project2.jpg', // Replace with your image path
+      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
+      image: '/assets/logo/projects/project2.jpg',
     },
-    // You can add more project objects as needed
+    {
+      name: 'Project 2',
+      description: 'Description of Project 2',
+      link: 'Link to Project 2',
+      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
+      image: '/assets/logo/projects/project2.jpg',
+    },
+    {
+      name: 'Project 2',
+      description: 'Description of Project 2',
+      link: 'Link to Project 2',
+      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
+      image: '/assets/logo/projects/project2.jpg',
+    },
+    {
+      name: 'Project 2',
+      description: 'Description of Project 2',
+      link: 'Link to Project 2',
+      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
+      image: '/assets/logo/projects/project2.jpg',
+    },
+    {
+      name: 'Project 2',
+      description: 'Description of Project 2',
+      link: 'Link to Project 2',
+      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
+      image: '/assets/logo/projects/project2.jpg',
+    },
+
+    // Add more projects as needed
   ];
 
   return (
     <div className="projects-container">
       <h1>My Projects</h1>
-      <div className="card-container">
+      <div className="project-card-container">
         {projects.map((project, index) => (
-          <div className="card" key={project.name}>
-            <img src={project.image} alt={project.name} />
-            <h2>{project.name}</h2>
-            <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+          <div className="project-card" key={project.name}>
+            <img src={project.thumbnail} alt={project.name} /> {/* Display the thumbnail image */}
+            <h2 className="project-h2">{project.name}</h2>
+            <p className="project-p">{project.description}</p>
+            <p href={project.link} target="_blank" rel="noopener noreferrer" className="project-a">
               Learn More
-            </a>
+            </p>
           </div>
         ))}
       </div>
-      <CursorBall /> {/* Include the CursorBall component */}
+      <CursorBall />
     </div>
   );
 };

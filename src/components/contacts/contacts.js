@@ -62,10 +62,10 @@ const Contact = () => {
     <div className="contact">
       <section className="contact-header">
         <h1>Let's get in touch</h1>
-        <p>You can reach out to me through the following contact details:</p>
       </section>
 
       <div className="contact-container">
+      <div className='contact-all'>
         <div className="contact-icons">
           <div className="contact-icons-holder">
             <a href="mailto:youremail@example.com">
@@ -145,6 +145,15 @@ const Contact = () => {
             <button type="submit">Submit</button>
           </form>
         </div>
+      </div>
+      <div className="side-section">
+      {/* Content or components for the side section */}
+      <h3>This is the side section content.</h3>
+       </div>
+       <div className="side-section2">
+      {/* Content or components for the side section */}
+      <h3>This is the side section content.</h3>
+       </div>
       </div>
 
       <CursorBall />

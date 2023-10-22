@@ -9,6 +9,10 @@
   padding-bottom: 200px;
 }
 
+.contact-all{
+  padding-left: 50%;
+  padding-top: 10%;  
+}
 .contact h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -124,4 +128,29 @@ button {
 
 button:hover {
   background-color: #da3700;
+}
+
+
+.side-section {
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  padding: 20px;
+  border-radius: 40px; /* Rounded corners */
+  position: absolute;
+  top: 25%; /* Align it with the top of the contact form */
+  right: 50%; /* Adjust the right position as needed */
+  width: 380px; /* Set the desired width */
+  height: 300px; /* Set the desired height */
+}
+
+.side-section2 {
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  padding: 20px;
+  border-radius: 40px; /* Rounded corners */
+  position: absolute;
+  top:50%; /* Adjust the top position to stack below the first section */
+  right: 50%; /* Adjust the right position as needed */
+  width: 380px; /* Set the desired width */
+  height: 300px; /* Set the desired height */
 }
