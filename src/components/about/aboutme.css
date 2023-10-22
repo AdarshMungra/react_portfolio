@@ -1,6 +1,6 @@
 /* aboutme.css */
 .about-me {
-  color: #EDEDED;
+  background-color: #000000;
   text-align: center;
   padding: 20px;
   display: flex;
@@ -22,7 +22,7 @@
   width: 320px; /* Adjust the width as needed */
   padding: 20px;
   text-align: left;
-  background-color: #444444;
+  background-color: #101010;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   font-size: 1.4rem;
