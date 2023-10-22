@@ -3,6 +3,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './sidebar.css';
 
+
 const Sidebar = () => {
   const location = useLocation();
 
@@ -27,7 +28,7 @@ const Sidebar = () => {
         <li className={location.pathname === '/blogs' ? 'active' : ''}>
           <Link to="/blogs">Blogs</Link>
         </li>
-      </ul>
+      </ul>   
     </div>
   );
 };

@@ -10,9 +10,9 @@ const AboutMe = () => {
       <div className="about-me-content">
         <div className="about-me-text">
           <h1>About Me</h1>
-          <p>
+          <div className='about-me-p'>
             Welcome to my portfolio! I'm a passionate developer with a strong interest in web development and design. Add your content here.
-          </p>
+          </div>
         </div>
         <div className="about-me-image">
           <img src={myImage} alt="My Photo" />

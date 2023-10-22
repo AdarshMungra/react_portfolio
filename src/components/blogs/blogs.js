@@ -34,7 +34,6 @@ const Blogs = () => {
             <div className="blog-details">
               <h2 className="blog-title">{post.title}</h2>
               <p className="blog-content">{post.content}</p>
-              <p className="blog-info">Author: {post.author}</p>
               <p className="blog-info">Date: {post.date}</p>
               <a className="read-more" href={post.link} target="_blank" rel="noopener noreferrer">
                 Read More
