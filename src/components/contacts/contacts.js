@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import CursorBall from '../cursorBall/cursorBall'; // Import the CursorBall component
 
 import './contacts.css';
 
@@ -104,6 +105,7 @@ const Contact = () => {
           <button type="submit">Submit</button>
         </form>
       </div>
+      <CursorBall /> {/* Include the CursorBall component */}
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './blogs.css';
+import CursorBall from '../cursorBall/cursorBall'; // Import the CursorBall component
 
 const Blogs = () => {
   const blogPosts = [
@@ -42,6 +43,7 @@ const Blogs = () => {
           </div>
         ))}
       </div>
+      <CursorBall /> {/* Include the CursorBall component */}
     </div>
   );
 };

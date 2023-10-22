@@ -1,6 +1,7 @@
 // Skills.js
 import React from 'react';
 import './skills.css'; // Import the CSS file
+import CursorBall from '../cursorBall/cursorBall'; // Import the CursorBall component
 
 const Skills = () => {
   return (
@@ -29,6 +30,7 @@ const Skills = () => {
         <p>Node.js</p>
         <p>SQL and NoSQL databases</p>
       </div>
+      <CursorBall /> {/* Include the CursorBall component */}
     </div>
   );
 }

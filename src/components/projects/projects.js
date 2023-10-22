@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './projects.css';
-import SwipeableCard from './SwipeableCard'; // Import the SwipeableCard component
+import CursorBall from '../cursorBall/cursorBall'; // Import the CursorBall component
 
 const Projects = () => {
-  const [projects, setProjects] = useState([
+  const projects = [
     {
       name: 'Project 1',
       description: 'Description of Project 1',
@@ -17,31 +17,24 @@ const Projects = () => {
       image: '/assets/logo/projects_tumbs/project2.jpg', // Replace with your image path
     },
     // You can add more project objects as needed
-  ]);
-
-  const handleSwipe = (direction) => {
-    // Handle swipe direction (e.g., like or dislike) and update the list of projects
-    if (direction === 'right') {
-      // Handle a right swipe (like)
-      // Update the state or perform any other action
-    } else if (direction === 'left') {
-      // Handle a left swipe (dislike)
-      // Update the state or perform any other action
-    }
-  };
+  ];
 
   return (
     <div className="projects-container">
       <h1>My Projects</h1>
-      <div className="swipe-container">
+      <div className="card-container">
         {projects.map((project, index) => (
-          <SwipeableCard
-            key={project.name}
-            project={project}
-            onSwipe={handleSwipe}
-          />
+          <div className="card" key={project.name}>
+            <img src={project.image} alt={project.name} />
+            <h2>{project.name}</h2>
+            <p>{project.description}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              Learn More
+            </a>
+          </div>
         ))}
       </div>
+      <CursorBall /> {/* Include the CursorBall component */}
     </div>
   );
 };

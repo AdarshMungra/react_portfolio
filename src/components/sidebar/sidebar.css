@@ -27,7 +27,9 @@ li {
   transition: transform 0.3s; /* Add a smooth animation on hover */
 }
 
-li:hover {
-  transform: scale(1.9) translateX(20px); /* Scale up and displace on the x-axis to the right on hover */
+li:hover,
+li.active {
+  transform: scale(1.9) translateX(5px); /* Scale up and displace on the x-axis to the right on hover and for the active page */
+  text-shadow: 1px 1px 5px rgb(171, 74, 74); /* Add a faint light shadow for the active link */
 }
 
