@@ -1,7 +1,7 @@
 /* projects.css */
 .projects-container {
   background-color: #000000;
-  color: #EDEDED;
+  color: #ffffff;
   padding: 20px;
   min-height: 100vh;
   text-align: center;
@@ -58,7 +58,7 @@ a {
 }
 
 .project-card {
-  background-color: #e1e1e1;
+  background-color: #ffffff;
   border: 1px solid #171717;
   border-radius: 40px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);

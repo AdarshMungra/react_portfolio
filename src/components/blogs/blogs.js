@@ -13,15 +13,6 @@ const Blogs = () => {
       image: '/images/blog1.jpg', // Image path
       link: 'Link to your Medium blog post 1', // Add the link to your Medium blog post
     },
-    {
-      id: 2,
-      title: 'Blog Post 2',
-      content: 'This is the content of Blog Post 2.',
-      author: 'Jane Smith',
-      date: 'October 5, 2023',
-      image: '/images/blog2.jpg',
-      link: 'Link to your Medium blog post 2', // Add the link to your Medium blog post
-    },
   ];
 
   return (
