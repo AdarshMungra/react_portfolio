@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './projects.css';
 import CursorBall from '../cursorBall/cursorBall';
 
@@ -49,6 +49,8 @@ const Projects = () => {
 
     // Add more projects as needed
   ];
+
+
 
   return (
     <div className="projects-container">
