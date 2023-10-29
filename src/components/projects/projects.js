@@ -39,6 +39,14 @@ const Projects = () => {
       thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
       image: '/assets/logo/projects/project2.jpg',
     },
+    {
+      name: 'Hundred',
+      description: 'Startup - app for getting informed ',
+      link: 'Link to Project 2',
+      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
+      image: '/assets/logo/projects/project2.jpg',
+    },
+
     // Add more projects as needed
     {
       name: 'New release episode tracker',
@@ -48,9 +56,33 @@ const Projects = () => {
       image: '/assets/logo/projects/project2.jpg',
     },
     // Add more projects as needed
+    {
+      name: 'Spotify album art image map ',
+      description: 'Image of your most listen artist and album ',
+      link: 'Link to Project 2',
+      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
+      image: '/assets/logo/projects/project2.jpg',
+    },
+    // Add more projects as needed
+    {
+      name: 'Spotify wrapped',
+      description: 'get your spotify wrapped at any time you want  ',
+      link: 'Link to Project 2',
+      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
+      image: '/assets/logo/projects/project2.jpg',
+    },
+    // Add more projects as needed
+    {
+      name: 'React native app',
+      description: 'basic to do list react native app ',
+      link: 'Link to Project 2',
+      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
+      image: '/assets/logo/projects/project2.jpg',
+    },
+
+
+    
   ];
-
-
 
   return (
     <div className="projects-container">
@@ -58,21 +90,21 @@ const Projects = () => {
       <div className="project-card-container">
         {projects.map((project, index) => (
           <div className="project-card" key={project.name}>
-            <img src={project.thumbnail} alt={project.name} /> {/* Display the thumbnail image */}
+            <img src={project.thumbnail} alt={project.name} />
             <h2 className="project-h2">{project.name}</h2>
             <p className="project-p">{project.description}</p>
-            <p href={project.link} target="_blank" rel="noopener noreferrer" className="project-a">
-              Learn More
+            <p>
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-a">
+                Learn More
+              </a>
             </p>
           </div>
         ))}
-      </div>
-      <div className="project-card-sidecard">
-
-      </div>
+      </div>    
       <CursorBall />
     </div>
   );
 };
+
 
 export default Projects;

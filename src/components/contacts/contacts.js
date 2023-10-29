@@ -148,7 +148,8 @@ const Contact = () => {
       </div>
       <div className="side-section">
       {/* Content or components for the side section */}
-      <h3>This is the side section content.</h3>
+      <h3>Current based in Mauritius</h3>
+      <h3>local time:</h3>
        </div>
        <div className="side-section2">
       {/* Content or components for the side section */}

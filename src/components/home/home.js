@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import CursorBall from '../cursorBall/cursorBall'; // Import the CursorBall component
+import CursorBall from '../cursorBall/cursorBall';
 
 const Home = () => {
   return (

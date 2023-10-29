@@ -28,6 +28,9 @@ const Sidebar = () => {
         <li className={location.pathname === '/blogs' ? 'active' : ''}>
           <Link to="/blogs">Blogs</Link>
         </li>
+        <li className={location.pathname === '/cv' ? 'active' : ''}>
+          <Link to="/cv">CV</Link>
+        </li>
       </ul>   
     </div>
   );

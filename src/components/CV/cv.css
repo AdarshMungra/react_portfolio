@@ -1,0 +1,9 @@
+/* Customize your CSS here */
+.pdf-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Add additional styling as needed */
+  

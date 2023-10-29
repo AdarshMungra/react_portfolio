@@ -8,6 +8,7 @@ import Contact from './components/contacts/contacts';
 import Skills from './components/skills/skills'; 
 import Projects from './components/projects/projects';
 import Blogs from './components/blogs/blogs';
+import CV from './components/CV/cv';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/contacts" element={<Contact />} /> 
             <Route path="/blogs" element= {<Blogs />}/>
+            <Route path="/CV" element= {<CV />}/>
             
             {/* Add more routes for other pages */}
 
