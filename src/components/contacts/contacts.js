@@ -65,7 +65,6 @@ const Contact = () => {
       </section>
 
       <div className="contact-container">
-      <div className='contact-all'>
         <div className="contact-icons">
           <div className="contact-icons-holder">
             <a href="mailto:youremail@example.com">
@@ -146,20 +145,10 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className="side-section">
-      {/* Content or components for the side section */}
-      <h3>Current based in Mauritius</h3>
-      <h3>local time:</h3>
-       </div>
-       <div className="side-section2">
-      {/* Content or components for the side section */}
-      <h3>This is the side section content.</h3>
-       </div>
-      </div>
 
       <CursorBall />
     </div>
   );
-}
+};
 
 export default Contact;
