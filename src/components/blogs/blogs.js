@@ -1,17 +1,17 @@
 import React from 'react';
 import './blogs.css';
-import CursorBall from '../cursorBall/cursorBall'; // Import the CursorBall component
+import CursorBall from '../cursorBall/cursorBall';
 
 const Blogs = () => {
   const blogPosts = [
     {
       id: 1,
-      title: 'Blog Post 1',
-      content: 'This is the content of Blog Post 1.',
-      author: 'John Doe',
-      date: 'October 1, 2023',
-      image: '/images/blog1.jpg', // Image path
-      link: 'Link to your Medium blog post 1', // Add the link to your Medium blog post
+      title: 'Blog Post',
+      content: '.',
+      author: 'Adarsh Mungra',
+      date: 'Nov 3, 2022',
+      image: '/assets/logo/projects_tumbs/medium post1.png', // Corrected image path
+      link: 'https://medium.com/@adarshmungra1/everything-you-need-to-know-to-get-started-with-docker-8f389148ed5c',
     },
   ];
 
@@ -33,7 +33,7 @@ const Blogs = () => {
           </div>
         ))}
       </div>
-      <CursorBall /> {/* Include the CursorBall component */}
+      <CursorBall />
     </div>
   );
 };
