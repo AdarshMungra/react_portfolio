@@ -1,30 +1,62 @@
+// Home.js
+
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
 import './home.css';
 import CursorBall from '../cursorBall/cursorBall';
+import AboutMe from '../about/aboutme'; // Import the AboutMe component
+import Skills from '../skills/skills'
+import Contact from '../contacts/contacts'
+import Projects from '../projects/projects'
+import Blogs from '../blogs/blogs'
 
 const Home = () => {
-  const languages = ['HELLO', 'Bonjour', 'Hola', 'Ciao', '你好', 'Привет', 'Merhaba', 'こんにちは', 'Hallo', 'Salut']; // Add more languages as needed
+  const languages = ['HELLO', 'Bonjour', 'Hola', 'Ciao', '你好', 'Привет', 'Merhaba', 'こんにちは', 'Hallo', 'Salut'];
   const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      // Increment the current language index and loop back to the start when reaching the end
-      setCurrentLanguageIndex((prevIndex) => (prevIndex + 1) % languages.length);
-    }, 2000); // Change language every 2 seconds (adjust as needed)
+    const handleScroll = () => {
+      const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      setCurrentLanguageIndex(Math.floor((scrollPercentage / 100) * languages.length));
+    };
+
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      clearInterval(interval); // Clean up the interval on component unmount
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [languages.length]);
 
+  const renderBentoSection = (title, content, sectionId, component = null) => (
+    <Link
+      to={sectionId}
+      spy={true}
+      smooth={true}
+      duration={500}
+      offset={-50}
+      className="bento-section"
+      key={sectionId}
+    >
+      <h2>{title}</h2>
+      <div className="bento-content">
+        <p>{content}</p>
+        {component}
+      </div>
+    </Link>
+  );
+
   return (
-    <div className="home">
-      <section>
-        <div className="text-content">
-          <h1>{languages[currentLanguageIndex]}</h1>
-        </div>
-      </section>
-      <CursorBall />
+    <div className="home-background">
+      <div className="home-container">
+        {renderBentoSection('Section 1', 'adad', 'section1')}
+        {renderBentoSection('Section 2', 'Content for Section 2', 'about-me-section', <AboutMe />)}
+        {renderBentoSection('Section 3', 'Content for Section 3', 'section3', <Skills /> )}
+        {renderBentoSection('Section 4', 'Content for Section 4', 'section4' , <Contact />)}
+        {renderBentoSection('Section 2', 'Content for Section 5', 'section5', <Projects />)}
+        {renderBentoSection('Section 3', 'Content for Section 6', 'section6', <Blogs />)}
+        {renderBentoSection('Section 4', 'Content for Section 7', 'section7')}
+        <CursorBall />
+      </div>
     </div>
   );
 };

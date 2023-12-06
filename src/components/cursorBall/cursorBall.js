@@ -6,6 +6,8 @@ const CursorBall = () => {
   const ballRef = useRef(null);
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
+  const [ballX, setBallX] = useState(0);
+  const [ballY, setBallY] = useState(0);
 
   const handleMouseMove = (event) => {
     setMouseX(event.pageX);
@@ -14,6 +16,7 @@ const CursorBall = () => {
 
   useEffect(() => {
     document.addEventListener('mousemove', handleMouseMove);
+
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
     };
@@ -24,14 +27,16 @@ const CursorBall = () => {
 
     const animate = () => {
       if (ballRef.current) {
-        const ballRect = ballRef.current.getBoundingClientRect();
-        const ballCenterX = ballRect.left + ballRect.width / 2;
-        const ballCenterY = ballRect.top + ballRect.height / 2;
-        const distX = mouseX - ballCenterX;
-        const distY = mouseY - ballCenterY;
-        const newBallX = ballRect.left + distX * 0.06;
-        const newBallY = ballRect.top + distY * 0.06;
-        ballRef.current.style.transform = `translate(${newBallX}px, ${newBallY}px)`;
+        const distX = mouseX - (ballX + ballRef.current.offsetWidth / 2);
+        const distY = mouseY - (ballY + ballRef.current.offsetHeight / 2);
+
+        // Use a smoothing factor (adjust as needed)
+        const smoothingFactor = 0.1;
+
+        setBallX(ballX + distX * smoothingFactor);
+        setBallY(ballY + distY * smoothingFactor);
+
+        ballRef.current.style.transform = `translate(${ballX}px, ${ballY}px)`;
       }
       animationFrameId = requestAnimationFrame(animate);
     };
@@ -41,7 +46,7 @@ const CursorBall = () => {
     return () => {
       cancelAnimationFrame(animationFrameId);
     };
-  }, [mouseX, mouseY]);
+  }, [mouseX, mouseY, ballX, ballY]);
 
   return <div className="cursor-ball" ref={ballRef}></div>;
 };

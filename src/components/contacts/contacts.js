@@ -146,7 +146,6 @@ const Contact = () => {
         </div>
       </div>
 
-      <CursorBall />
     </div>
   );
 };

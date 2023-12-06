@@ -108,7 +108,7 @@ const Projects = () => {
         ))}
       </div>
       <Popup isOpen={selectedProject !== null} closePopup={closePopup} />
-      <CursorBall />
+
     </div>
   );
 };

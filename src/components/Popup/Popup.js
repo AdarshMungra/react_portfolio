@@ -9,9 +9,7 @@ function Popup({ isOpen, closePopup }) {
   return (
     <div className="popup">
       <div className="popup-content">
-        <h2>Popup Content</h2>
-        <p>This is the content of the popup.</p>
-        <button onClick={closePopup}>Close</button>
+        <button onClick={closePopup}>X</button>
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ const Skills = () => {
         <p>Node.js</p>
         <p>SQL and NoSQL databases</p>
       </div>
-      <CursorBall /> {/* Include the CursorBall component */}
+
     </div>
   );
 }

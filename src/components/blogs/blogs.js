@@ -33,7 +33,6 @@ const Blogs = () => {
           </div>
         ))}
       </div>
-      <CursorBall />
     </div>
   );
 };
