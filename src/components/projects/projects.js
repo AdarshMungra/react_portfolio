@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './projects.css';
-import CursorBall from '../cursorBall/cursorBall';
 import Popup from '../Popup/Popup';
 
 const Projects = () => {
@@ -57,14 +56,7 @@ const Projects = () => {
       thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
       image: '/assets/logo/projects/project2.jpg',
     },
-    // Add more projects as needed
-    {
-      name: 'Spotify wrapped',
-      description: 'get your spotify wrapped at any time you want  ',
-      link: 'Link to Project 2',
-      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
-      image: '/assets/logo/projects/project2.jpg',
-    },
+
     // Add more projects as needed
     {
       name: 'React native app',
@@ -88,7 +80,6 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
-      <h1>My Projects</h1>
       <div className="project-card-container">
         {projects.map((project, index) => (
           <div

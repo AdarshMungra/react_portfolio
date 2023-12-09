@@ -9,6 +9,7 @@ import Skills from '../skills/skills'
 import Contact from '../contacts/contacts'
 import Projects from '../projects/projects'
 import Blogs from '../blogs/blogs'
+import Welcome from '../welcome/welcome';
 
 const Home = () => {
   const languages = ['HELLO', 'Bonjour', 'Hola', 'Ciao', '你好', 'Привет', 'Merhaba', 'こんにちは', 'Hallo', 'Salut'];
@@ -37,9 +38,9 @@ const Home = () => {
       className="bento-section"
       key={sectionId}
     >
-      <h2>{title}</h2>
+
       <div className="bento-content">
-        <p>{content}</p>
+
         {component}
       </div>
     </Link>
@@ -48,8 +49,8 @@ const Home = () => {
   return (
     <div className="home-background">
       <div className="home-container">
-        {renderBentoSection('Section 1', 'adad', 'section1')}
-        {renderBentoSection('Section 2', 'Content for Section 2', 'about-me-section', <AboutMe />)}
+        {renderBentoSection('Section 1', 'Content for Section 1', 'section1', <Welcome />)}
+        {renderBentoSection('Section 2', 'Content for Section 2', 'section2', <AboutMe />)}
         {renderBentoSection('Section 3', 'Content for Section 3', 'section3', <Skills /> )}
         {renderBentoSection('Section 4', 'Content for Section 4', 'section4' , <Contact />)}
         {renderBentoSection('Section 2', 'Content for Section 5', 'section5', <Projects />)}

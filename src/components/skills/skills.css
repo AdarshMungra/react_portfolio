@@ -1,18 +1,19 @@
 /* skills.css */
 .skills-container {
-  background-color: #000000;
+  background-color:  #ececec;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   padding-top: 20px;
+  border-radius: 100px;
 }
 
 .skills-heading {
-  font-size: 2rem;
+  font-size: 6rem;
   margin: 0;
-  color: #EDEDED;
+  color: #000000;
   width: 100%;
   text-align: center;
   padding: 20px;
@@ -27,11 +28,11 @@
 }
 
 .skills-category  {
-  background-color: #ececec;
+  background-color: #0c0c0c;
   padding: 20px;
   border-radius: 40px;
   text-align: center;
-  width: 300px;
+  width: 400px;
   padding-top: 10px;
   animation: glow 3s infinite;
   @keyframes glow {
@@ -54,8 +55,8 @@
 }
 
 .skills-category p {
-  font-size: 1.2rem;
-  color: #000000;
+  font-size: 1.5rem;
+  color: #ffffff;
   margin: 5px 0;
 }
 

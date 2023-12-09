@@ -25,7 +25,7 @@
 
 .about-me-text {
   /* Adjust the width to match the image width */
-  width: 320px; /* Adjust the width as needed */
+  width: 400px; /* Adjust the width as needed */
   padding: 20px;
   text-align: left;
   background-color: #e7e7e7;
@@ -33,7 +33,7 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   font-size: 1.4rem;
   font-weight: 600;
-  color: #EDEDED;
+  color: #313131;
   
 }
 

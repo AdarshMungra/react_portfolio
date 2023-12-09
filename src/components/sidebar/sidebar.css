@@ -6,12 +6,13 @@
   height: 100%;
   width: 100px; /* Adjust the width as needed */
   color: #ffffff !important; /* Text color with !important */
-  padding: 50px;
+  padding: 60px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center-align items vertically */
-  font-size: 24px; /* Increase the font size to make labels bigger */
-  
+  font-size: 40px; /* Increase the font size to make labels bigger */
+  mix-blend-mode: difference;
 }
 
 ul {
@@ -30,8 +31,26 @@ li {
 
 li:hover,
 li.active {
-  transform: scale(1.9) translateX(5px); /* Scale up and displace on the x-axis to the right on hover and for the active page */
+  transform: scale(1.8) translateX(5px); /* Scale up and displace on the x-axis to the right on hover and for the active page */
   text-shadow: 1px 1px 5px rgb(171, 74, 74); /* Add a faint light shadow for the active link */
-
+  font-size: 50px;
+  color: red;
+  padding:0%;
 }
 
+.sidebar li.active {
+  transform: scale(1.8) translateX(5px); /* Scale up and displace on the x-axis to the right on hover and for the active page */
+  text-shadow: 1px 1px 5px rgb(171, 74, 74); /* Add a faint light shadow for the active link */
+  font-size: 50px;
+  color: red;
+  padding:0%;
+}
+
+
+.link {
+  color: #000;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px;
+}

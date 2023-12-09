@@ -40,12 +40,10 @@ body {
 }
 
 h1 {
-  position: absolute;
   left: 50%;
   top: 10%;
-  font-size: 5vmin;
+  font-size: 7vmin;
   letter-spacing: -0.04em;
-  transform: translate(-50%, -50%);
   display: block;
 }
 
@@ -94,11 +92,15 @@ div.ball{
   justify-content: center;
   text-align: center;
   scroll-snap-align: start; /* Ensure each section starts at the top of the viewport after scrolling */
+  scroll-snap-type: mandatory;
 }
 
 .bento-content {
   /* Add styles for the content within each bento section */
-  width: 100vh;
-  height: 80vh;
+  width: 99vmax;
+  height: 99vh;
   border-radius: 3cm;
+  background-color: #292929;
+
+
 }

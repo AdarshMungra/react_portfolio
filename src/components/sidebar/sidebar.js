@@ -26,7 +26,7 @@ const Sidebar = () => {
           <Link to="/projects">Projects</Link>
         </li>
         <li className={location.pathname === '/blogs' ? 'active' : ''}>
-          <Link to="/blogs">Blogs</Link>
+          <Link to="/blogs">Blog</Link>
         </li>
         <li className={location.pathname === '/cv' ? 'active' : ''}>
           <Link to="/cv">CV</Link>
@@ -37,3 +37,5 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+
