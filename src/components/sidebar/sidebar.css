@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center-align items vertically */
-  font-size: 40px; /* Increase the font size to make labels bigger */
+  font-size: 30px; /* Increase the font size to make labels bigger */
   mix-blend-mode: difference;
 }
 
@@ -39,7 +39,7 @@ li.active {
 }
 
 .sidebar li.active {
-  transform: scale(1.8) translateX(5px); /* Scale up and displace on the x-axis to the right on hover and for the active page */
+  transform: scale(1.6) translateX(5px); /* Scale up and displace on the x-axis to the right on hover and for the active page */
   text-shadow: 1px 1px 5px rgb(171, 74, 74); /* Add a faint light shadow for the active link */
   font-size: 50px;
   color: red;

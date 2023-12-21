@@ -9,6 +9,7 @@
   justify-content: center; /* Center vertically */
   gap: 40px;
   min-height: 100vh; /* Ensure the background color takes the entire screen height */
+  border-radius: 100px;
 }
 
 .about-me-p{
