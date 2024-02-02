@@ -1,82 +1,41 @@
-import React, { useState } from 'react';
-import './projects.css';
-import Popup from '../Popup/Popup';
+import React from "react";
+import "./projects.css";
 
 const Projects = () => {
   const projects = [
     {
-      name: 'Mauclo',
-      description: 'Online e-commerce store',
-      link: 'Link to Project 1',
-      thumbnail: '/assets/logo/projects_tumbs/maucloHome.png',
-      image: '/assets/logo/projects_tumbs/maucloHome.png',
+      name: "Mauclo",
+      description: "Online e-commerce store",
+      link: "Link to Project 1",
+      thumbnail: "/assets/logo/projects_tumbs/maucloHome.png",
+      color: "#3498db", // Set color for the first project
+      imageBackground: "/assets/images/mauclo_background.jpg", // Set background image for the first project
     },
     {
-      name: 'techanalytics',
-      description: 'business interface webapp',
-      link: '',
-      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
-      image: '/assets/logo/projects/project2.jpg',
+      name: "techanalytics",
+      description: "business interface webapp",
+      link: "",
+      thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
+      color: "#2ecc71", // Set color for the second project
+      imageBackground: "/assets/images/techanalytics_background.jpg", // Set background image for the second project
     },
     {
-      name: 'Grocery items Object detection and classifications',
-      description: 'Machine learning',
-      link: 'Link to Project 2',
-      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
-      image: '/assets/logo/projects/project2.jpg',
+      name: "ChatBOX for Legal advice",
+      description: "Ai chatBOX",
+      link: "Link to Project 2",
+      thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
+      color: "#e74c3c", // Set color for the third project
+      imageBackground: "/assets/images/chatbox_background.jpg", // Set background image for the third project
     },
     {
-      name: 'ChatBOX for Legal advice',
-      description: 'Ai chatBOX',
-      link: 'Link to Project 2',
-      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
-      image: '/assets/logo/projects/project2.jpg',
+      name: "GYMING-React native app",
+      description: "basic to-do list react native app ",
+      link: "Link to Project 2",
+      thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
+      color: "#f39c12", // Set color for the fourth project
+      imageBackground: "/assets/images/gyming_background.jpg", // Set background image for the fourth project
     },
-    {
-      name: 'Hundred',
-      description: 'Startup - app for getting informed ',
-      link: 'Link to Project 2',
-      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
-      image: '/assets/logo/projects/project2.jpg',
-    },
-
-    // Add more projects as needed
-    {
-      name: 'New release episode tracker',
-      description: 'library of favourite movies and tv shows',
-      link: 'Link to Project 2',
-      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
-      image: '/assets/logo/projects/project2.jpg',
-    },
-    // Add more projects as needed
-    {
-      name: 'Spotify album art image map ',
-      description: 'Image of your most listen artist and album ',
-      link: 'Link to Project 2',
-      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
-      image: '/assets/logo/projects/project2.jpg',
-    },
-
-    // Add more projects as needed
-    {
-      name: 'React native app',
-      description: 'basic to do list react native app ',
-      link: 'Link to Project 2',
-      thumbnail: '/assets/logo/projects_thumbs/project2_thumb.jpg',
-      image: '/assets/logo/projects/project2.jpg',
-    },
-  ]; //end of const project 
-
-
-  const [selectedProject, setSelectedProject] = useState(null);
-
-  const openPopup = (project) => {
-    setSelectedProject(project);
-  };
-
-  const closePopup = () => {
-    setSelectedProject(null);
-  };
+  ];
 
   return (
     <div className="projects-container">
@@ -85,24 +44,29 @@ const Projects = () => {
           <div
             className="project-card"
             key={project.name}
-            onClick={() => openPopup(project)}
+            style={{
+              backgroundColor: project.color,
+              backgroundImage: `url(${project.imageBackground})`,
+            }}
           >
             <img src={project.thumbnail} alt={project.name} />
             <h2 className="project-h2">{project.name}</h2>
             <p className="project-p">{project.description}</p>
             <p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-a">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-a"
+              >
                 Learn More
               </a>
             </p>
           </div>
         ))}
       </div>
-      <Popup isOpen={selectedProject !== null} closePopup={closePopup} />
-
     </div>
   );
 };
-
 
 export default Projects;

@@ -11,9 +11,9 @@ const Welcome = () => {
     "Hallo",
     "नमस्ते ", // Hindi
     "こんにちは", // Japanese
-    "Hello" // English
+    "Hello", // English
   ];
-  
+
   const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
 
   useEffect(() => {
@@ -34,14 +34,10 @@ const Welcome = () => {
 
   return (
     <div className="welcome-container">
-      <div className="welcome">
-        {languages[currentLanguageIndex]}
-      </div>
-      <div className="name">
-        Adarsh Mungra
-      </div>
+      <div className="welcome">{languages[currentLanguageIndex]}</div>
+      <div className="name">Adarsh Mungra</div>
       <div className="arrow">
-      <HiArrowDown />
+        <HiArrowDown />
       </div>
     </div>
   );

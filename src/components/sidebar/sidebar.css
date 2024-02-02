@@ -31,7 +31,7 @@ li {
 
 li:hover,
 li.active {
-  transform: scale(1.8) translateX(5px); /* Scale up and displace on the x-axis to the right on hover and for the active page */
+  transform: scale(1.5) translateX(5px); /* Scale up and displace on the x-axis to the right on hover and for the active page */
   text-shadow: 1px 1px 5px rgb(171, 74, 74); /* Add a faint light shadow for the active link */
   font-size: 50px;
   color: red;

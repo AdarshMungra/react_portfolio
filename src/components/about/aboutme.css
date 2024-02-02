@@ -1,19 +1,21 @@
 /* aboutme.css */
 .about-me {
-  background-color: #000000;
+  background-color: #433434;
   text-align: center;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center; /* Center horizontally */
   justify-content: center; /* Center vertically */
-  gap: 40px;
   min-height: 100vh; /* Ensure the background color takes the entire screen height */
   border-radius: 100px;
 }
 
 .about-me-p{
   color: #000000;
+}
+
+.about-me-h1 {
+  font-size: 30;
 }
 
 .about-me-content {
@@ -26,7 +28,7 @@
 
 .about-me-text {
   /* Adjust the width to match the image width */
-  width: 400px; /* Adjust the width as needed */
+  width: 600px; /* Adjust the width as needed */
   padding: 20px;
   text-align: left;
   background-color: #e7e7e7;

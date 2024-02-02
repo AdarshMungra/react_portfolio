@@ -1,6 +1,6 @@
 /* projects.css */
 .projects-container {
-  color: #ffffff;
+  color: #a0a0a0;
   padding: 20px;
   min-height: 100vh;
   text-align: center;
@@ -19,7 +19,7 @@
 
 .project-card-container {
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
   grid-gap: 20px;
 }
 
@@ -55,7 +55,7 @@ a {
 
 .project-card {
   background-color: #ffffff;
-  border: 2px solid #171717;
+  border: 5px solid #171717;
   border-radius: 60px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   margin: 20px;

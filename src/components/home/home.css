@@ -65,7 +65,7 @@ h1:hover .ball{
 }
 
 div.ball{
-  background-color: #ffffff;
+  background-color: #ff8a6a;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -93,6 +93,8 @@ div.ball{
   text-align: center;
   scroll-snap-align: start; /* Ensure each section starts at the top of the viewport after scrolling */
   scroll-snap-type: mandatory;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .bento-content {
@@ -100,5 +102,5 @@ div.ball{
   width: 99vmax;
   height: 99vh;
   border-radius: 100px;
-  background-color: #292929;  
+
 }
