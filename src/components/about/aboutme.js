@@ -8,7 +8,7 @@ const AboutMe = () => {
     <div className="about-me">
       <div className="about-me-content">
         <div className="about-me-text">
-          <h1>About Me</h1>
+          <h1>About Me ✨</h1>
           <div className="about-me-p">
             Hey! I'm Adarsh Mungra, a passionate developer with a strong
             interest in web development and design based in Mauritius. As a

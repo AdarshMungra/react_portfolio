@@ -1,17 +1,14 @@
-import React from 'react';
-import './blogs.css';
-import CursorBall from '../cursorBall/cursorBall';
+import React from "react";
+import "./blogs.css";
 
 const Blogs = () => {
   const blogPosts = [
     {
       id: 1,
-      title: 'Blog Post',
-      content: '.',
-      author: 'Adarsh Mungra',
-      date: 'Nov 3, 2022',
-      image: '/assets/logo/projects_tumbs/medium post1.png', // Corrected image path
-      link: 'https://medium.com/@adarshmungra1/everything-you-need-to-know-to-get-started-with-docker-8f389148ed5c',
+      title: "",
+      content: "Everything you need to know to get started with docker.",
+      image: "/assets/logo/projects_tumbs/medium post1.png",
+      link: "https://medium.com/@adarshmungra1/everything-you-need-to-know-to-get-started-with-docker-8f389148ed5c",
     },
   ];
 
@@ -25,8 +22,12 @@ const Blogs = () => {
             <div className="blog-details">
               <h2 className="blog-title">{post.title}</h2>
               <p className="blog-content">{post.content}</p>
-              <p className="blog-info">Date: {post.date}</p>
-              <a className="read-more" href={post.link} target="_blank" rel="noopener noreferrer">
+              <a
+                className="read-more"
+                href={post.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Read More
               </a>
             </div>

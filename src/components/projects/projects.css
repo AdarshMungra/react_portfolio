@@ -1,8 +1,7 @@
 /* projects.css */
 .projects-container {
   color: #a0a0a0;
-  padding: 20px;
-  min-height: 100vh;
+  padding: 10px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -12,15 +11,15 @@
 .project-container {
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   width: 100%;
 }
 
 .project-card-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  grid-gap: 5px;
 }
 
 .project-info {
@@ -28,8 +27,18 @@
   text-align: left;
 }
 
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 50px; /* Add space above the title */
+  margin-bottom: 10px; /* Reduce space below the title */
+  color: #f6f6f6; /* Adjust the color if needed */
+}
+
+
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #1c1c1c;
 }
 

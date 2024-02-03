@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -8,28 +8,50 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "./contacts.css";
 
+const openLink = (url) => {
+  window.open(url, "_blank");
+};
+
+const openMailTo = (email) => {
+  window.open(`mailto:${email}?subject=Subject%20Here`, "_blank");
+};
+
 const Contact = () => {
   return (
     <div className="contact">
       <section className="contact-header">
-        <h1>Let's get in touch</h1>
+        <h1>Let's get in touch !!!</h1>
       </section>
 
       <div className="contact-container">
         <div className="contact-icons">
           <div className="contact-icons-holder">
-            <a href="adarshmungra1@gmail.com">
+            <div
+              className="icons"
+              onClick={() => openMailTo("adarshmungra1@gmail.com")}
+            >
               <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-            <a href="https://www.linkedin.com/in/adarshmungra/">
+            </div>
+            <div
+              className="icons"
+              onClick={() =>
+                openLink("https://www.linkedin.com/in/adarshmungra/")
+              }
+            >
               <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a href="https://github.com/AdarshMungra">
+            </div>
+            <div
+              className="icons"
+              onClick={() => openLink("https://github.com/AdarshMungra")}
+            >
               <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a href="https://medium.com/@adarshmungra1">
+            </div>
+            <div
+              className="icons"
+              onClick={() => openLink("https://medium.com/@adarshmungra1")}
+            >
               <FontAwesomeIcon icon={faMedium} />
-            </a>
+            </div>
           </div>
         </div>
       </div>

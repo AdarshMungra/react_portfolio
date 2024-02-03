@@ -84,23 +84,24 @@ div.ball{
 }
 
 .bento-section {
-  height: 100vh; /* Set the height of each bento section */
+  height: 100vh;
   background-color: #000000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  scroll-snap-align: start; /* Ensure each section starts at the top of the viewport after scrolling */
+  scroll-snap-align: start;
   scroll-snap-type: mandatory;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .bento-content {
-  /* Add styles for the content within each bento section */
-  width: 99vmax;
-  height: 99vh;
+  width: 100%; /* Adjusted width to 100% */
+  max-width: 100%; /* Set a maximum width for content */
   border-radius: 100px;
-
+  overflow: hidden; /* Ensure content doesn't overflow */
 }
