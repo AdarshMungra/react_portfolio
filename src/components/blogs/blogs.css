@@ -7,15 +7,15 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #000000 ;
+    background-color: #cbc1ab ;
     border-radius: 100px;
   }
   
   .blogs-header {
-    font-size: 3rem; /* Increase the font size for a magazine cover title */
+    font-size: 2.5rem; /* Increase the font size for a magazine cover title */
     font-weight: bold; /* Make the title bold */
     margin-bottom: 30px; /* Add more spacing below the title */
-    color: #EDEDED;
+    color: #563e16;
   }
   
   .blog-posts {
@@ -30,13 +30,13 @@
     border-radius: 40px;
     box-shadow: 0px 4px 8px rgb(237, 237, 237);
     overflow: hidden;
-    max-width: 400px;
+    max-width: 300px;
     text-align: left;
   }
   
   .blog-image {
     max-width: 100%;
-    height: auto;
+    height: 90%;
   }
   
   .blog-details {
@@ -51,10 +51,10 @@
   }
   
   .blog-content {
-    font-size: 1.3rem; /* Slightly larger font size for content */
+    font-size: 1rem; /* Slightly larger font size for content */
     color: #666;
-    margin-bottom: 10px;
-    line-height: 1.5; /* Add line spacing for improved readability */
+    margin-bottom: 6px;
+    line-height: 1; /* Add line spacing for improved readability */
   }
   
   .blog-info {
@@ -62,21 +62,3 @@
     color: #999;
   }
   
-  a.read-more {
-    display: block;
-    text-decoration: none;
-    background-color: #4caede;
-    color: #fff;
-    font-size: 1.2rem;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    text-align: center;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
-  }
-  
-  a.read-more:hover {
-    background-color: #0056b3;
-  }

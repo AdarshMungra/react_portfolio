@@ -9,9 +9,9 @@
 }
 
 .contact h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  margin-top: 400px;
+  margin-top: 30vh;
   color: #1b3b60;
 }
 
@@ -31,7 +31,7 @@
 .contact-icons {
   flex: 1;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -39,13 +39,13 @@
 .contact-icons .icons {
   text-decoration: none;
   color: #a22142;
-  font-size: 80px;
+  font-size: 60px;
   background-color: #ffffff;
   border: 1px solid #c8c8c8;
   border-radius: 50%;
   padding: 15px;
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,5 +55,5 @@
 .contact-icons .icons:hover {
   background-color: #00dacb;
   color: #fff;
-  transform: scale(1.5);
+  transform: scale(1.4);
 }
