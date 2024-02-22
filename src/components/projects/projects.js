@@ -24,34 +24,34 @@ const Projects = () => {
     },
     {
       name: "AI ChatBox",
-      description: "React Native app",
+      description: "LLM",
       link: "/projects/dumpy", // Link to the Dumpy project page
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
       color: "#77dd77",
       imageBackground: "",
     },
     {
-      name: "AI ChatBox",
-      description: "React Native app",
+      name: "Tech Analytics",
+      description: "React | Django",
       link: "/projects/dumpy", // Link to the Dumpy project page
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
-      color: "#77dd77",
+      color: "#FFBE98",
       imageBackground: "",
     },
     {
-      name: "AI ChatBox",
-      description: "React Native app",
+      name: "Game",
+      description: "",
       link: "/projects/dumpy", // Link to the Dumpy project page
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
-      color: "#77dd77",
+      color: "#8E7AB5",
       imageBackground: "",
     },
     {
-      name: "AI ChatBox",
-      description: "React Native app",
+      name: "React webapp",
+      description: "Interactive React webapp | mongoDB",
       link: "/projects/dumpy", // Link to the Dumpy project page
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
-      color: "#77dd77",
+      color: "#94B49F",
       imageBackground: "",
     },
     {
@@ -62,11 +62,19 @@ const Projects = () => {
       color: "#A7C7E7",
       imageBackground: projectT2,
     },
+    {
+      name: "UI | UX case study",
+      description: "",
+      link: "/projects/mauclo", // Link to the Mauclo project page
+      thumbnail: "/assets/logo/projects_tumbs/maucloHome.png",
+      color: "#A7a7c7",
+      imageBackground: "",
+    },
   ];
 
   return (
     <div>
-      <h1 className="title">My Projects</h1>
+      <h1 className="title">Projects</h1>
       <div className="projects-container">
         <div className="project-card-container">
           {projects.map((project) => (
@@ -85,6 +93,7 @@ const Projects = () => {
             </Link>
           ))}
         </div>
+        <button className="more-projects">🔎</button>
       </div>
     </div>
   );

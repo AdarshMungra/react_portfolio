@@ -1,0 +1,36 @@
+.tech {
+    background-color: #020b14;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  .tech-header h1 {
+    margin-top: 10vh;
+    font-size: 2.5rem;
+    color: #4478ac;
+    text-shadow: 10px 10px 20px rgba(194, 235, 252, 0.5);
+  }
+  
+  .tech-categories-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+  }
+  
+  .tech-category {
+    flex: 1;
+    margin: 0 10px;
+    color: #4478ac;
+    font-size: 1rem;
+  }
+  
+  .tech-card {
+    background-color: #0b2137b7;
+    padding: 20px;
+    border-radius: 5vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }

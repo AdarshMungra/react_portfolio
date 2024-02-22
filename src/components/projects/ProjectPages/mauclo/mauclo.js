@@ -11,6 +11,7 @@ const MaucloProjectPage = () => {
         <h1>Mauclo.</h1>
         <h3>Clothing e-commerce website</h3>
         <h2> PHP | Laravel | SQL |</h2>
+        <button className="gobutton">visit website</button>
       </div>
       <Link to="/projects" className="back-button">
         <IoIosArrowBack /> go back to Projects

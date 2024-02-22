@@ -7,6 +7,8 @@ import Contact from "../contacts/contacts";
 import Projects from "../projects/projects";
 import Blogs from "../blogs/blogs";
 import Welcome from "../welcome/welcome";
+import Work from "../workhistory/work";
+import TechStack from "../techstack/techstack";
 
 const Home = () => {
   const sections = [
@@ -14,8 +16,9 @@ const Home = () => {
     { title: "About Me", component: <AboutMe />, id: "section2" },
     { title: "Projects", component: <Projects />, id: "section5" },
     { title: "Contact", component: <Contact />, id: "section4" },
+    { title: "Work", component: <Work />, id: "section7" },
+    { title: "techstack", component: <TechStack />, id: "section8" },
     { title: "Blogs", component: <Blogs />, id: "section6" },
-    { title: "Section 7", component: null, id: "section7" },
   ];
 
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);

@@ -40,3 +40,26 @@
     width: 60vh;
     margin-bottom: 40px;
   }
+
+  .gobutton {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: 2px solid #0353a862; /* Blue border */
+    font-size: 20px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    display: flex; /* Align content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    cursor: pointer; /* Show pointer on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  .gobutton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Darker blue border on hover */
+    color: #fff; /* White text on hover */
+  }
+  

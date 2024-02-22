@@ -1,0 +1,102 @@
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .work-container {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #abcacb;
+    border-radius: 100px;
+  }
+  
+  .work-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #563e16;
+  }
+  
+  .timeline {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    overflow-x: auto;
+    display: flex;
+  }
+  
+  .timeline-content {
+    width: 60vh;
+    height: 25vh;
+    padding: 30px;
+    margin-right: 10px;
+    background-color: #516d6f;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .timeline-period {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:  #563e16dd;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+  }
+  
+  .timeline-content:last-child {
+    margin-right: 0;
+  }
+  
+  .timeline-content::before {
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 5px;
+    background-color: #fff;
+    bottom: -20px;
+    left: 0;
+    border-radius: 10px;
+  }
+  
+  .timeline-content::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 30px;
+    background-color: #8d8989;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Add this CSS to make the scrollbar horizontal */
+  .timeline {
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 45vh;
+  }
+  
+  /* Hide the default scrollbar */
+  .timeline::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  .timeline-image{
+    width: 10vh;
+  }

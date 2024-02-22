@@ -35,7 +35,7 @@ const Welcome = () => {
   return (
     <div className="welcome-container">
       <div className="welcome">{languages[currentLanguageIndex]}</div>
-      <div className="name">Adarsh Mungra</div>
+      <div className="name">Adarsh Mungra | Portfolio</div>
       <div className="arrow">
         <HiArrowDown />
       </div>

@@ -79,7 +79,7 @@ div.ball{
 
 .home-container {
   overflow-y: scroll; /* Enable vertical scrolling */
-  scroll-behavior: smooth; /* Add smooth scrolling behavior */
+  scroll-behavior:smooth; /* Add smooth scrolling behavior */
   scroll-snap-type: y mandatory; /* Enable scroll snapping for a smoother scroll experience */
 }
 

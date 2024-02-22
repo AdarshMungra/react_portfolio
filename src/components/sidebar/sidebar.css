@@ -24,9 +24,9 @@ ul {
 
 li {
   font-style: rgb(0, 0, 0);
-  margin-bottom: 30px; /* Adjust the spacing between labels */
+  margin-bottom: 20px; /* Adjust the spacing between labels */
   cursor: pointer;
-  transition: transform 0.3s; /* Add a smooth animation on hover */
+  transition: transform 0.4s; /* Add a smooth animation on hover */
 }
 
 li:hover,
@@ -35,7 +35,6 @@ li.active {
   text-shadow: 1px 1px 5px rgb(171, 74, 74); /* Add a faint light shadow for the active link */
   font-size: 30px;
   color: red;
-  padding:0%;
 }
 
 .sidebar li.active {
