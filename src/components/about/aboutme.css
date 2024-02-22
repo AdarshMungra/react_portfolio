@@ -12,6 +12,7 @@
 
 .about-me-p{
   color:#433434;
+  padding: 4;
 }
 
 .about-me-h1 {
@@ -28,8 +29,8 @@
 
 .about-me-text {
   /* Adjust the width to match the image width */
-  width: 600px; /* Adjust the width as needed */
-  padding: 20px;
+  width: 40vh; /* Adjust the width as needed */
+  padding: 24px;
   text-align: left;
   background-color: #e7e7e7;
   border-radius: 50px;
@@ -49,7 +50,7 @@
 }
 
 img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
-  border-radius: 80px;
+  border-radius: 60px;
 }
