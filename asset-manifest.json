@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react_portfolio/static/css/main.ff69f20f.css",
+    "main.js": "/react_portfolio/static/js/main.bc9b1f24.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react_portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/portfolioPic.jpg": "/react_portfolio/static/media/portfolioPic.4afe70be0d275d0c2751.jpg",
+    "static/media/dumpyP3-removebg-preview.png": "/react_portfolio/static/media/dumpyP3-removebg-preview.ef28dc27b34da6760d70.png",
+    "static/media/dumpyP2-removebg-preview.png": "/react_portfolio/static/media/dumpyP2-removebg-preview.00b3f7255297c01eb1e4.png",
+    "static/media/projectT2-removebg-preview.png": "/react_portfolio/static/media/projectT2-removebg-preview.732d0c84ddbb23c19269.png",
+    "static/media/uom logo300px.png": "/react_portfolio/static/media/uom logo300px.0b64ead9d7f8a9ace06a.png",
+    "static/media/maucloP1-removebg-preview.png": "/react_portfolio/static/media/maucloP1-removebg-preview.8b959d9472a5baad1bdf.png",
+    "static/media/medium post1.png": "/react_portfolio/static/media/medium post1.4092334f59654ac914f4.png",
+    "static/media/car-removebg-preview.png": "/react_portfolio/static/media/car-removebg-preview.c7e6a42d81cf947d9eba.png",
+    "static/media/projectT1-removebg-preview.png": "/react_portfolio/static/media/projectT1-removebg-preview.6cbd65191d379205566c.png",
+    "index.html": "/react_portfolio/index.html",
+    "main.ff69f20f.css.map": "/react_portfolio/static/css/main.ff69f20f.css.map",
+    "main.bc9b1f24.js.map": "/react_portfolio/static/js/main.bc9b1f24.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react_portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff69f20f.css",
+    "static/js/main.bc9b1f24.js"
+  ]
+}
