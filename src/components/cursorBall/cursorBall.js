@@ -1,6 +1,6 @@
 // cursorBall.js
-import React, { useState, useEffect, useRef } from 'react';
-import './cursorBall.css';
+import React, { useState, useEffect, useRef } from "react";
+import "./cursorBall.css";
 
 const CursorBall = () => {
   const ballRef = useRef(null);
@@ -15,10 +15,10 @@ const CursorBall = () => {
   };
 
   useEffect(() => {
-    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener("mousemove", handleMouseMove);
 
     return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
@@ -31,7 +31,7 @@ const CursorBall = () => {
         const distY = mouseY - (ballY + ballRef.current.offsetHeight / 2);
 
         // Use a smoothing factor (adjust as needed)
-        const smoothingFactor = 0.1;
+        const smoothingFactor = 0.2;
 
         setBallX(ballX + distX * smoothingFactor);
         setBallY(ballY + distY * smoothingFactor);

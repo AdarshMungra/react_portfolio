@@ -33,14 +33,14 @@
 
 
 h2 {
-  font-size: 1.5rem;
-  color: #1c1c1c;
+  font-size: 1.6rem;
+  /* color: #1c1c1c; */
   padding: 24px;
 }
 
 p {
   font-size: 1rem;
-  color: #0f0f0f;
+  /* color: #0f0f0f; */
   margin-bottom: 80px;
   align-items: center;
 }

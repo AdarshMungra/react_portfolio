@@ -9,11 +9,13 @@ import Projects from "./components/projects/projects";
 import Blogs from "./components/blogs/blogs";
 import DumpyProjectPage from "./components/projects/ProjectPages/dumpy/dumpy"; // Import the DumpyProjectPage component
 import MaucloProjectPage from "./components/projects/ProjectPages/mauclo/mauclo";
+import CursorBall from "./components/cursorBall/cursorBall";
 function App() {
   return (
     <Router>
       <div className="App">
         <Sidebar />
+        <CursorBall />
 
         <div className="content">
           <Routes>

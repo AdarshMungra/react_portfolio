@@ -36,6 +36,8 @@ const Welcome = () => {
     <div className="welcome-container">
       <div className="welcome">{languages[currentLanguageIndex]}</div>
       <div className="name">Adarsh Mungra | Portfolio</div>
+      <div className="instructions">Press F11 to go fullscreen,</div>
+      <div className="instructions">and scroll down!!!</div>
       <div className="arrow">
         <HiArrowDown />
       </div>

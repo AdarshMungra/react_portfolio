@@ -16,9 +16,18 @@
   padding-top: 2vh;
   font-family: monospace;
   text-shadow: 1px 30px 10px rgba(0, 0, 0, 0.5);
-  font-size: 16px;
+  font-size: 20px;
   align-items: center;
 }
+
+.instructions {
+  padding-top: 2vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 1px 30px 10px rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  align-items: center;
+}
+
 
 .arrow {
   padding-bottom:20vh ;

@@ -24,14 +24,14 @@
   .work-header {
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #563e16;
   }
   
   .timeline {
     width: 100%;
-    max-width: 800px;
-    padding: 30px;
+    max-width: 700px;
+    padding: 20px;
     overflow-x: auto;
     display: flex;
   }
@@ -39,7 +39,7 @@
   .timeline-content {
     width: 60vh;
     height: 25vh;
-    padding: 30px;
+    padding: 20px;
     margin-right: 10px;
     background-color: #516d6f;
     border-radius: 20px;
@@ -98,5 +98,5 @@
   
 
   .timeline-image{
-    width: 10vh;
+    width: 20vh;
   }

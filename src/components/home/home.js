@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-scroll";
 import "./home.css";
-import CursorBall from "../cursorBall/cursorBall";
 import AboutMe from "../about/aboutme";
 import Contact from "../contacts/contacts";
 import Projects from "../projects/projects";
@@ -21,25 +20,6 @@ const Home = () => {
     { title: "Blogs", component: <Blogs />, id: "section6" },
   ];
 
-  const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPercentage =
-        (window.scrollY /
-          (document.documentElement.scrollHeight - window.innerHeight)) *
-        100;
-      setCurrentSectionIndex(
-        Math.floor((scrollPercentage / 100) * sections.length)
-      );
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [sections.length]);
-
   const renderBentoSection = (section) => (
     <Link
       to={section.id}
@@ -58,7 +38,7 @@ const Home = () => {
     <div className="home-background">
       <div className="home-container">
         {sections.map(renderBentoSection)}
-        <CursorBall />
+        {/* <CursorBall /> */}
       </div>
     </div>
   );

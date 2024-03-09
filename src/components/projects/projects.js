@@ -13,38 +13,43 @@ const Projects = () => {
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
       color: "#FAA0A0",
       imageBackground: projectT1,
+      textColor: "#732020",
     },
     {
       name: "Gym log",
       description: "React Native app",
       link: "/projects/dumpy", // Link to the Dumpy project page
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
-      color: "#FDFD96",
+      color: "#faff5e",
       imageBackground: "",
+      textColor: "#2f3007",
     },
     {
       name: "AI ChatBox",
       description: "LLM",
       link: "/projects/dumpy", // Link to the Dumpy project page
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
-      color: "#77dd77",
+      color: "#00ffae",
       imageBackground: "",
+      textColor: "black",
     },
     {
-      name: "Tech Analytics",
+      name: "Booking Mauritius",
       description: "React | Django",
       link: "/projects/dumpy", // Link to the Dumpy project page
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
-      color: "#FFBE98",
+      color: "#ff5f00",
       imageBackground: "",
+      textColor: "black",
     },
     {
       name: "Game",
       description: "",
       link: "/projects/dumpy", // Link to the Dumpy project page
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
-      color: "#8E7AB5",
+      color: "#513ed5",
       imageBackground: "",
+      textColor: "white",
     },
     {
       name: "React webapp",
@@ -53,6 +58,7 @@ const Projects = () => {
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
       color: "#94B49F",
       imageBackground: "",
+      textColor: "black",
     },
     {
       name: "Mauclo",
@@ -61,6 +67,7 @@ const Projects = () => {
       thumbnail: "/assets/logo/projects_tumbs/maucloHome.png",
       color: "#A7C7E7",
       imageBackground: projectT2,
+      textColor: "black",
     },
     {
       name: "UI | UX case study",
@@ -69,6 +76,7 @@ const Projects = () => {
       thumbnail: "/assets/logo/projects_tumbs/maucloHome.png",
       color: "#A7a7c7",
       imageBackground: "",
+      textColor: "black",
     },
   ];
 
@@ -84,6 +92,7 @@ const Projects = () => {
                 style={{
                   backgroundColor: project.color,
                   backgroundImage: `url(${project.imageBackground})`,
+                  color: project.textColor, // Set text color
                 }}
               >
                 {/* <img src={project.thumbnail} alt={project.name} /> */}

@@ -9,7 +9,13 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <ul>
-        <li className={location.pathname === "/home" ? "active" : ""}>
+        <li
+          className={
+            location.pathname === "/home" || location.pathname === "/"
+              ? "active"
+              : ""
+          }
+        >
           <a href="/home">Home</a>
         </li>
         <li className={location.pathname === "/about" ? "active" : ""}>
