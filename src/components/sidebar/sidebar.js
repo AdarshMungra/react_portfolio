@@ -1,6 +1,6 @@
 // Sidebar.js
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./sidebar.css";
 
 const Sidebar = () => {
@@ -16,22 +16,22 @@ const Sidebar = () => {
               : ""
           }
         >
-          <a href="/home">Home</a>
+          <Link to="/home">Home</Link>
         </li>
         <li className={location.pathname === "/about" ? "active" : ""}>
-          <a href="/about">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li className={location.pathname === "/projects" ? "active" : ""}>
-          <a href="/projects">Projects</a>
+          <Link to="/projects">Projects</Link>
         </li>
         <li className={location.pathname === "/contacts" ? "active" : ""}>
-          <a href="/contacts">Contact</a>
+          <Link to="/contacts">Contact</Link>
         </li>
         <li className={location.pathname === "/blogs" ? "active" : ""}>
-          <a href="/blogs">Blog</a>
+          <Link to="/blogs">Blog</Link>
         </li>
         <li className={location.pathname === "/fun" ? "active" : ""}>
-          <a href="/fun">Fun</a>
+          <Link to="/fun">Fun</Link>
         </li>
         <li>
           <a
