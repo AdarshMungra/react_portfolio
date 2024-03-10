@@ -53,3 +53,26 @@ li.active {
   font-size: 16px;
   padding: 10px;
 }
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px; /* Adjust the width for smaller screens */
+    padding: 20px; /* Adjust the padding for smaller screens */
+    font-size: 16px; /* Reduce the font size for smaller screens */
+  }
+
+  .sidebar li {
+    margin-bottom: 10px; /* Adjust the spacing between labels for smaller screens */
+  }
+
+  .sidebar li.active {
+    font-size: 20px; /* Increase the font size for the active page on smaller screens */
+  }
+
+  .link {
+    font-size: 14px; /* Reduce the font size for links on smaller screens */
+    padding: 5px; /* Adjust the padding for links on smaller screens */
+  }
+}
+

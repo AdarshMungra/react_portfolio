@@ -1,14 +1,24 @@
 // Sidebar.js
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./sidebar.css";
 
 const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div className="sidebar">
-      <ul>
+      <div className="burger-menu" onClick={toggleSidebar}>
+        <div className="burger-bar"></div>
+        <div className="burger-bar"></div>
+        <div className="burger-bar"></div>
+      </div>
+      <ul className={isOpen ? "menu active" : "menu"}>
         <li
           className={
             location.pathname === "/home" || location.pathname === "/"

@@ -102,7 +102,7 @@ const Projects = () => {
             </Link>
           ))}
         </div>
-        <button className="more-projects">🔎</button>
+        {/* <button className="more-projects">🔎</button> */}
       </div>
     </div>
   );

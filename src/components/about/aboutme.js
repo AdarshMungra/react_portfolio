@@ -7,6 +7,10 @@ const AboutMe = () => {
   return (
     <div className="about-me">
       <div className="about-me-content">
+        <div className="about-me-image">
+          <img src={myImage} alt="My Photo" />
+        </div>
+
         <div className="about-me-text">
           <h1>About Me ✨</h1>
           <div className="about-me-p">
@@ -30,9 +34,6 @@ const AboutMe = () => {
             projects to further refine my skills. Feel free to connect with me
             on LinkedIn to learn more about my work and project
           </div>
-        </div>
-        <div className="about-me-image">
-          <img src={myImage} alt="My Photo" />
         </div>
       </div>
     </div>

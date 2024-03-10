@@ -1,40 +1,71 @@
 /* welcome.css */
 .welcome-container {
   background:#265073;
-
 }
+
 .welcome {
-  padding-top: 35vh;
+  padding-top: 45vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
   color: #F1FADA;
-  font-size: 100px;
+  font-size: 60px;
   font-family: monospace;
-  text-shadow: 10px 40px 10px rgba(0, 0, 0, 0.5);
-  border-radius: 100px;
+  text-shadow: 5px 20px 5px rgba(0, 0, 0, 0.5);
 }
 
 .name {
   padding-top: 2vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
   font-family: monospace;
-  text-shadow: 1px 30px 10px rgba(0, 0, 0, 0.5);
-  font-size: 20px;
-  align-items: center;
+  text-shadow: 1px 15px 5px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
 }
 
 .instructions {
   padding-top: 2vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 1px 30px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 15px 5px rgba(0, 0, 0, 0.5);
   font-size: 12px;
-  align-items: center;
 }
-
 
 .arrow {
-  padding-bottom:20vh ;
+  padding-bottom: 15vh;
   font-family: monospace;
-  text-shadow: 1px 50px 10px rgba(0, 0, 0, 0.5);
-  font-size: 100px;
-  align-items: center;
+  text-shadow: 1px 25px 5px rgba(0, 0, 0, 0.5);
+  font-size: 60px;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .welcome {
+    font-size: 40px;
+    border-radius: 3vw;
+  }
 
+  .name {
+    font-size: 14px;
+  }
+
+  .instructions {
+    font-size: 10px;
+  }
+
+  .arrow {
+    font-size: 40px;
+  }
+
+  .welcome {
+    padding-top: 50vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: #F1FADA;
+    font-size: 60px;
+    font-family: monospace;
+    text-shadow: 5px 20px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  
+}

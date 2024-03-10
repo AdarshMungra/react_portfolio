@@ -63,3 +63,45 @@
     color: #999;
   }
   
+
+  /* Media query for mobile screens */
+@media (max-width: 768px) {
+  .blogs-header {
+    font-size: 1.5rem; /* Decrease the font size of the header for smaller screens */
+  }
+
+  .blog-posts {
+    flex-direction: column; /* Change the direction to column for smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .blog-post {
+    max-width: 60vw; /* Adjust the maximum width of blog posts for smaller screens */
+    margin-bottom: 20px; /* Add margin between blog posts for smaller screens */
+  }
+
+  .blog-title {
+    font-size: 1.5rem; /* Decrease the font size of blog titles for smaller screens */
+  }
+
+  .blog-content {
+    font-size: 0.8rem; /* Decrease the font size of blog content for smaller screens */
+    line-height: 1.4; /* Increase line height for better readability */
+  }
+
+  .blog-info {
+    font-size: 0.8rem; /* Decrease the font size of blog info for smaller screens */
+  }
+
+  .blogs-container {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #cbc1ab ;
+    border-radius: 30px;
+  }
+}

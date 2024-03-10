@@ -34,3 +34,27 @@
     border-radius: 5vh;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+
+
+  /* Media query for mobile screens */
+@media (max-width: 768px) {
+  .tech-header h1 {
+    margin-top: 5vh; /* Decrease the top margin of the header for smaller screens */
+    font-size: 2rem; /* Decrease the font size of the header for smaller screens */
+  }
+
+  .tech-categories-container {
+    flex-direction: column; /* Change the direction to column for smaller screens */
+    align-items: center; /* Center align items */
+    margin: 5vh 0; /* Adjust the margin for smaller screens */
+  }
+
+  .tech-category {
+    margin: 5px 0; /* Adjust the margin between categories for smaller screens */
+  }
+
+  .tech-card {
+    padding: 10px; /* Decrease the padding of the card for smaller screens */
+    border-radius: 10px; /* Increase the border radius of the card for smaller screens */
+  }
+}

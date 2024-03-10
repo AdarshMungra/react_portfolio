@@ -54,3 +54,38 @@ img {
   height: auto;
   border-radius: 60px;
 }
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .about-me-h1 {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+
+  .about-me-text {
+    width: 90vw; /* Adjusted width to be 90% of the viewport width */
+    font-size: 0.8rem; /* Make the text smaller */
+  }
+
+  .about-me-content {
+    flex-direction: column; /* Align items in a column for smaller screens */
+  }
+
+  .about-me-image {
+    padding: 10px; /* Reduce padding for smaller screens */
+    margin-left: 12vw;
+    align-items: center; /* Align items in the center horizontally */
+    width: 200px;
+    height: 200px;
+  }
+  .about-me {
+    background-color: #433434;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the background color takes the entire screen height */
+    border-radius: 30px;
+  }
+}

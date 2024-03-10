@@ -1,5 +1,6 @@
 /* home.css */
 
+/* Common styles for all screen sizes */
 .home {
   font-size: large;
   text-align: center;
@@ -104,4 +105,43 @@ div.ball{
   max-width: 100%; /* Set a maximum width for content */
   border-radius: 100px;
   overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+/* Media query for smaller screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 5vmin; /* Adjust the font size of h1 for smaller screens */
+  }
+
+  div.ball {
+    width: 50px;
+    height: 50px; /* Adjust the size of the ball for smaller screens */
+  }
+
+  .home-container {
+    padding: 2px; /* Add padding to the home container for smaller screens */
+  }
+
+  .bento-section {
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    scroll-snap-align: start;
+    scroll-snap-type: mandatory;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-left:2px;
+    padding-right: 2px;
+  }
+
+.bento-content {
+  width: 100%; /* Adjusted width to 100% */
+  max-width: 100%; /* Set a maximum width for content */
+  border-radius: 20px;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
 }

@@ -100,3 +100,50 @@
   .timeline-image{
     width: 20vh;
   }
+
+  /* Media query for mobile screens */
+@media (max-width: 768px) {
+  .work-header {
+    font-size: 1.5rem; /* Decrease the font size of header for smaller screens */
+  }
+
+  .timeline {
+    flex-direction: row; /* Change the direction to column for smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .timeline-content {
+    width: 90vw; /* Adjust the width of timeline content for smaller screens */
+    height: 30vh; /* Adjust the height of timeline content for smaller screens */
+    margin-bottom: 20px; /* Add margin between timeline items for smaller screens */
+  }
+
+  .timeline-period {
+    bottom: -40px; /* Adjust the position of period for smaller screens */
+    font-size: 0.6rem; /* Decrease the font size of period for smaller screens */
+  }
+
+  .timeline-content::before {
+    width: 110%; /* Adjust the width of the pseudo-element for smaller screens */
+  }
+
+  .timeline-content::after {
+    height: 20px; /* Adjust the height of the pseudo-element for smaller screens */
+  }
+
+  .timeline {
+    height: auto; /* Allow the timeline to expand based on content */
+  }
+    
+  .work-container {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #abcacb;
+    border-radius: 30px;
+  }
+}

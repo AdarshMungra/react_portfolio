@@ -50,14 +50,6 @@ a {
   text-decoration: none;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-
-  .project-card {
-    max-width: 100%;
-  }
-}
-
 .project-card {
   /* border: 1px solid #ffffff; */
   border-radius: 40px;
@@ -108,3 +100,52 @@ a {
 
 }
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .projects-container {
+    padding-left: 0; /* Remove left padding on smaller screens */
+  }
+
+  .project-container {
+    padding: 5px; /* Reduce padding for project containers */
+  }
+
+  .title {
+    font-size: 1.4rem; /* Reduce font size for title on smaller screens */
+    margin-top: 20px; /* Reduce top margin for title on smaller screens */
+    margin-bottom: 10px; /* Reduce bottom margin for title on smaller screens */
+  }
+
+  h2 {
+    font-size: 1.2rem; /* Reduce font size for h2 on smaller screens */
+    padding: 12px; /* Adjust padding for h2 on smaller screens */
+  }
+
+  p {
+    font-size: 0.8rem; /* Reduce font size for p on smaller screens */
+    margin-bottom: 20px; /* Reduce bottom margin for p on smaller screens */
+  }
+
+  .more-projects {
+    width: 5vh; /* Adjust width for more projects button on smaller screens */
+    height: 6vh; /* Adjust height for more projects button on smaller screens */
+    margin-left: 0; /* Remove left margin for more projects button on smaller screens */
+    margin-top: 20px; /* Adjust top margin for more projects button on smaller screens */
+  }
+
+  .project-card-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Set grid to one column for mobile screens */
+    grid-gap: 5px; /* Adjust grid gap for better spacing */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 0 20px; /* Add some padding to the sides */
+    margin-bottom: 20px; /* Add space at the bottom */
+  }
+
+  .project-card {
+    width: 80vw; /* Adjust width to be 80% of viewport width for smaller screens */
+    height: auto; /* Let the height be determined by the content */
+  }
+
+  
+}
