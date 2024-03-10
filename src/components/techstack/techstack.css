@@ -1,9 +1,10 @@
 .tech {
     background-color: #020b14;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     text-align: center;
     height: 100vh;
+    margin-top:10px ;
   }
   
   .tech-header h1 {
@@ -40,7 +41,7 @@
 @media (max-width: 768px) {
   .tech-header h1 {
     margin-top: 5vh; /* Decrease the top margin of the header for smaller screens */
-    font-size: 2rem; /* Decrease the font size of the header for smaller screens */
+    font-size: 1rem; /* Decrease the font size of the header for smaller screens */
   }
 
   .tech-categories-container {

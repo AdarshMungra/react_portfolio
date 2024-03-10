@@ -45,7 +45,6 @@ li.active {
   padding:0%;
 }
 
-
 .link {
   color: #000;
   text-decoration: none;
@@ -53,6 +52,31 @@ li.active {
   font-size: 16px;
   padding: 10px;
 }
+
+.menu {
+  display: none;
+  background-color: white;
+}
+
+.menu.active {
+  display: inline-block;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.burger-bar {
+  width: 40px;
+  height: 8px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  margin: 4px;
+}
+
 
 
 @media (max-width: 768px) {
@@ -74,5 +98,46 @@ li.active {
     font-size: 14px; /* Reduce the font size for links on smaller screens */
     padding: 5px; /* Adjust the padding for links on smaller screens */
   }
+
+  .sidebar {
+    position: fixed;
+    top: -100px;
+    left: 10;
+    height: 100%;
+    width: 80px; /* Adjust the width as needed */
+    color: #ffffff !important; /* Text color with !important */
+    padding: 60px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center-align items vertically */
+    font-size: 20px; /* Increase the font size to make labels bigger */
+    mix-blend-mode: difference;
+  }
+
+  .menu {
+    display: none;
+    background-color: white;
+  }
+  
+  .menu.active {
+    display: inline-block;
+  }
+  
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .burger-bar {
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    margin: 4px;
+  }
+  
 }
 
