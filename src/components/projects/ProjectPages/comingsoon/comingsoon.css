@@ -1,0 +1,18 @@
+.coming-project-page {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #515151;
+  }
+  
+  .back-button-soon {
+    display: inline-block;
+    margin-top: 40vh;
+    margin-bottom: 20px;
+    color: #eeeeee;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  

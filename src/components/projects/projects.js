@@ -18,7 +18,7 @@ const Projects = () => {
     {
       name: "Gym log",
       description: "React Native app",
-      link: "/projects/dumpy", // Link to the Dumpy project page
+      link: "/projects/comingsoon",
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
       color: "#faff5e",
       imageBackground: "",
@@ -27,7 +27,7 @@ const Projects = () => {
     {
       name: "AI ChatBox",
       description: "LLM",
-      link: "/projects/dumpy", // Link to the Dumpy project page
+      link: "/projects/comingsoon",
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
       color: "#00ffae",
       imageBackground: "",
@@ -36,7 +36,7 @@ const Projects = () => {
     {
       name: "Booking Mauritius",
       description: "React | Django",
-      link: "/projects/dumpy", // Link to the Dumpy project page
+      link: "/projects/comingsoon",
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
       color: "#ff5f00",
       imageBackground: "",
@@ -45,7 +45,7 @@ const Projects = () => {
     {
       name: "Game",
       description: "",
-      link: "/projects/dumpy", // Link to the Dumpy project page
+      link: "/projects/comingsoon",
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
       color: "#513ed5",
       imageBackground: "",
@@ -54,7 +54,7 @@ const Projects = () => {
     {
       name: "React webapp",
       description: "Interactive React webapp | mongoDB",
-      link: "/projects/dumpy", // Link to the Dumpy project page
+      link: "/projects/comingsoon",
       thumbnail: "/assets/logo/projects_thumbs/project2_thumb.jpg",
       color: "#94B49F",
       imageBackground: "",
@@ -72,7 +72,7 @@ const Projects = () => {
     {
       name: "UI | UX case study",
       description: "",
-      link: "/projects/mauclo", // Link to the Mauclo project page
+      link: "/projects/comingsoon",
       thumbnail: "/assets/logo/projects_tumbs/maucloHome.png",
       color: "#A7a7c7",
       imageBackground: "",

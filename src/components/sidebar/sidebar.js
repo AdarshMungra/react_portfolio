@@ -35,10 +35,10 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href={`${process.env.PUBLIC_URL}/resume.pdf`}
+            href={`${process.env.PUBLIC_URL}/Resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
-            className={location.pathname === "/resume.pdf" ? "active" : ""}
+            className={location.pathname === "/Resume.pdf" ? "active" : ""}
           >
             Resume
           </a>

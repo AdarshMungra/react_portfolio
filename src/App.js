@@ -9,6 +9,7 @@ import Projects from "./components/projects/projects";
 import Blogs from "./components/blogs/blogs";
 import DumpyProjectPage from "./components/projects/ProjectPages/dumpy/dumpy"; // Import the DumpyProjectPage component
 import MaucloProjectPage from "./components/projects/ProjectPages/mauclo/mauclo";
+import ComingSoonPage from "./components/projects/ProjectPages/comingsoon/comingsoon";
 import CursorBall from "./components/cursorBall/cursorBall";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/projects/dumpy" element={<DumpyProjectPage />} />
             <Route path="/projects/mauclo" element={<MaucloProjectPage />} />
+            <Route path="/projects/comingsoon" element={<ComingSoonPage />} />
           </Routes>
         </div>
       </div>
