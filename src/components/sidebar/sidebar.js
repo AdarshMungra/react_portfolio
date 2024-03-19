@@ -11,7 +11,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="sidebar">
+    <div className="sidebar" style={{ top: isOpen ? "0" : "-100px" }}>
       <div className="burger-menu" onClick={toggleSidebar}>
         <div className="burger-bar"></div>
         <div className="burger-bar"></div>
